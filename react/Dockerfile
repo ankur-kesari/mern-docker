@@ -1,4 +1,5 @@
 FROM ubuntu:latest
 WORKDIR /scripts
 COPY react-front-bootstrap.sh /scripts
-CMD sudo ./react-front-bootstrap.sh
+RUN chmod +x react-front-bootstrap.sh
+CMD ./react-front-bootstrap.sh
