@@ -10,7 +10,7 @@ curl -sL https://deb.nodesource.com/setup_12.x | bash -
 apt-get -y install nodejs npm
 
 #install nginx
-apt-get install nginx -y
+apt-get -y install nginx
 
 #cloning repo
 git clone https://github.com/gothinkster/react-redux-realworld-example-app.git
@@ -19,6 +19,7 @@ cd react-redux-realworld-example-app
 
 #changing root api for connecting the backend
 sed -i 's/conduit.productionready.io/52.66.100.173:3000/' src/agent.js
+sed -i 's/https:/http:/' src/agent.js
 
 #installing dependencies
 npm install
