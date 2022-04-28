@@ -13,12 +13,12 @@ apt-get -y install nodejs npm
 apt-get -y install nginx
 
 #cloning repo
-git clone https://github.com/gothinkster/react-redux-realworld-example-app.git
+git clone https://github.com/Ashutosh-aws/react-redux-realworld-example-app.git
 cd react-redux-realworld-example-app
 
 
 #changing root api for connecting the backend
-sed -i 's/conduit.productionready.io/52.66.100.173:3000/' src/agent.js
+sed -i 's/abc/52.66.100.173:3000/' src/agent.js
 sed -i 's/https:/http:/' src/agent.js
 
 #installing dependencies
