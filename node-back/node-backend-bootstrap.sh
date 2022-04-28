@@ -23,13 +23,13 @@ apt-get update
 apt-get install -y mongodb
 service mongodb start
 
-git clone https://github.com/gothinkster/node-express-realworld-example-app.git
-cd /node-express-realworld-example-app
+git clone https://github.com/Ashutosh-aws/node-express-mern-cicd.git
+cd /node-express-mern-cicd
 
 
 #installing dependency for node application
 npm install
-sed -i 's/localhost/localhost:27017/' app.js
+sed -i 's/abc/localhost:27017/' app.js
 
 npm install pm2 -g
 
