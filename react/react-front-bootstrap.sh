@@ -10,7 +10,7 @@ curl -sL https://deb.nodesource.com/setup_12.x | bash -
 apt-get -y install nodejs npm
 
 #install nginx
-apt-get -y install nginx
+#apt-get -y install nginx FROM nginx in dockerfile
 
 #cloning repo
 git clone https://github.com/Ashutosh-aws/react-redux-realworld-example-app.git
